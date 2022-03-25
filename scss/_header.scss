@@ -1,0 +1,62 @@
+.barra{
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    position:fixed;
+    z-index: 1;
+    justify-content:flex-end;
+    width: 100%;
+    z-index: 1;
+}
+.logo{
+    margin-left: 15rem;
+}
+.principal{
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: black;
+    margin-left: 50px;
+    font-size: 50px;
+}
+.barra ul{
+    display:flex;
+    list-style: none;
+    gap: 0.5rem;
+    margin-left:14rem;
+}
+.barra ul li{
+    font-size: 1.2rem;
+    color:black;
+}
+.barra ul li a{
+    text-decoration: none;
+    color: black;
+}
+.barra ul li:hover a{
+    color:rgb(133, 217, 245);
+    text-decoration:underline;  
+    text-align: center;
+}
+.encabezado{
+    background: rgb(106, 165, 170);
+    background: linear-gradient(0deg, rgb(109, 141, 145) 5%, rgba(255,204,232,1) 82%);
+    background-size:100%;
+
+}
+.titulo{
+    padding: 10px;
+    margin: 40px;
+    text-align: center;
+    animation-duration: 10s;
+    animation-name: animame;
+    animation-iteration-count:infinite;
+}
+@keyframes animame {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
