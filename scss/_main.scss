@@ -17,6 +17,16 @@
     color: $bgcolor1;
     font-family: Arial, Helvetica, sans-serif;
 }
+//mixin//
+@mixin transformacion {
+    margin: 25px 25px 25px 25px;
+    transition: all 1s ease-out;
+    &:hover{
+        transform:scale(1.1, 1.1);
+        opacity:.6;
+    }
+}
+
 .service{
     width: 100%;
     margin:auto;
@@ -28,7 +38,7 @@
     background: linear-gradient(0deg, rgb(109, 141, 145) 5%, rgba(255,204,232,1) 82%);
     grid-template-rows: 0fr 1fr 0fr;
     grid-template-areas: 
-    "tex0 tex0 tex0"
+    "tex0 tex0 tex0" 
     "first second thirt"
     "tex1 tex2 tex3";
 }
@@ -41,28 +51,15 @@
 }
 .first{
     grid-area: first;
-    transition: all 1s ease-out;
-    margin: 25px 25px 25px 25px
-}
-.first:hover{
-    transform: scale(1.1, 1.1);
-    
+    @include transformacion;
 }
 .second{
     grid-area: second;
-    transition: all 1s ease-out;
-    margin: 25px 25px 25px 25px
-}
-.second:hover{
-    transform: scale(1.1, 1.1);
+    @include transformacion;
 }
 .thirt{
     grid-area: thirt;
-    transition: all 1s ease-out;
-    margin: 25px 25px 25px 25px;
-}
-.thirt:hover{
-    transform: scale(1.1, 1.1);
+    @include transformacion;
 }
 .tex1{
     grid-area: tex1;
@@ -128,6 +125,7 @@
     background-color: rgb(255, 255, 255);
     
 }
+
 .contenedor2{
     width: 100%;
     margin:auto;
@@ -152,21 +150,15 @@
 }
 .postura1{
     grid-area: postura1;
-    transition: all 1s ease-out;
-}
-.postura1:hover{
-    transform: scale(1.1, 1.1);
 }
 .postura2{
     grid-area: postura2;
-    transition: all 1s ease-out;
 }
 .postura2:hover{
     transform: scale(1.1, 1.1);
 }
 .postura3{
     grid-area: postura3;
-    transition: all 1s ease-out;
 }
 .postura3:hover{
     transform: scale(1.1, 1.1);
@@ -240,6 +232,7 @@
         margin: 5px 5px 5px 5px;
     }
 }
+
 @media screen and (max-width:768px){
     .contenedor1{
         height: 450vh;
