@@ -688,11 +688,11 @@ p {
 }
 
 .meditacion {
-  background-image: url(/fotos/meditacion.jpg);
   background-size: 100%;
   border-start-end-radius: 70px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  background-image: url(/fotos/meditacion.jpg);
 }
 
 .meditacion:hover {
@@ -702,11 +702,11 @@ p {
 }
 
 .yoga {
-  background-image: url(/fotos/yogaa.jpg);
   background-size: 100%;
   border-start-end-radius: 70px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  background-image: url(/fotos/yogaa.jpg);
 }
 
 .yoga:hover {
@@ -716,11 +716,11 @@ p {
 }
 
 .masajes {
-  background-image: url(/fotos/masaje.jpg);
   background-size: 100%;
   border-start-end-radius: 70px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  background-image: url(/fotos/masaje.jpg);
 }
 
 .masajes:hover {
@@ -730,11 +730,11 @@ p {
 }
 
 .reiki {
-  background-image: url(/fotos/reiki.jpg);
   background-size: 100%;
   border-start-end-radius: 70px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  background-image: url(/fotos/reiki.jpg);
 }
 
 .reiki:hover {

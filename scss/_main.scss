@@ -485,20 +485,20 @@ p{
     flex-direction:column-reverse;
 }
 .meditacion{
-    background-image: url(/fotos/meditacion.jpg);
     @include transformacion1;
+    background-image: url(/fotos/meditacion.jpg);
 }
 .yoga{
-    background-image: url(/fotos/yogaa.jpg);
     @include transformacion1;
+    background-image: url(/fotos/yogaa.jpg);
 }
 .masajes{
-    background-image: url(/fotos/masaje.jpg);
     @include transformacion1;
+    background-image: url(/fotos/masaje.jpg);
 }
 .reiki{ 
-    background-image: url(/fotos/reiki.jpg);
     @include transformacion1;
+    background-image: url(/fotos/reiki.jpg);
 }
 .caja:hover{
     opacity: 1;
