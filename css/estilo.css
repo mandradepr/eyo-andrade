@@ -127,9 +127,7 @@
   background: linear-gradient(0deg, #6d8d91 5%, #ffcce8 82%);
   -ms-grid-rows: 0fr 1fr 0fr;
       grid-template-rows: 0fr 1fr 0fr;
-      grid-template-areas: "tex0 tex0 tex0" 
- "first second thirt"
- "tex1 tex2 tex3";
+      grid-template-areas: "tex0 tex0 tex0"  "first second thirt" "tex1 tex2 tex3";
 }
 
 .tex0 {
@@ -285,10 +283,7 @@
   background: linear-gradient(0deg, #6d8d91 5%, #ffcce8 82%);
   -ms-grid-rows: 1fr 0,5fr 1fr 1fr;
       grid-template-rows: 1fr 0,5fr 1fr 1fr;
-      grid-template-areas: "primero primero primero"
- "postura1 postura2 postura3"
- "tpostura1 tpostura2 tpostura3"
- "reflexion reflexion reflexion";
+      grid-template-areas: "primero primero primero" "postura1 postura2 postura3" "tpostura1 tpostura2 tpostura3" "reflexion reflexion reflexion";
 }
 
 .hijo3 {
@@ -368,7 +363,7 @@
     -ms-grid-rows: 520px 550px;
         grid-template-rows: 520px 550px;
   }
-  .hijo1 {
+  .hijo1, .hijo2 {
     margin: 70px 20px 20px 20px;
   }
   .hijo2 {
@@ -379,11 +374,7 @@
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 0fr 0fr 0fr 0fr;
         grid-template-rows: 0fr 0fr 0fr 0fr;
-        grid-template-areas: "primero primero"
- "postura1 tpostura1"
- "postura2 tpostura2"
- "postura3 tpostura3"
- "reflexion reflexion";
+        grid-template-areas: "primero primero" "postura1 tpostura1" "postura2 tpostura2" "postura3 tpostura3" "reflexion reflexion";
   }
   .tpostura1 {
     margin: 0px 50px 0px 0px;
@@ -422,7 +413,7 @@
     -ms-grid-rows: 0fr 1fr 1fr 950px;
         grid-template-rows: 0fr 1fr 1fr 950px;
   }
-  .hijo1 {
+  .hijo1, .hijo2 {
     margin: 40px 40px 40px 40px;
   }
   .hijo2 {
@@ -453,14 +444,7 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: 20px 210px 210px 210px 220px 215px 250px 450px;
         grid-template-rows: 20px 210px 210px 210px 220px 215px 250px 450px;
-        grid-template-areas: "primero"
- "postura1"  
- "tpostura1"
- "postura2"
- "tpostura2"
- "postura3"
- "tpostura3"
- "reflexion";
+        grid-template-areas: "primero" "postura1"   "tpostura1" "postura2" "tpostura2" "postura3" "tpostura3" "reflexion";
   }
   .tpostura1 {
     margin: 50px 50px 50px 50px;
@@ -498,13 +482,7 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: 165px 470px 150px 390px 160px 490px 100px;
         grid-template-rows: 165px 470px 150px 390px 160px 490px 100px;
-        grid-template-areas: "tex0"
- "first"
- "tex1"
- "second"
- "tex2"
- "thirt"
- "tex3";
+        grid-template-areas: "tex0" "first" "tex1" "second" "tex2" "thirt" "tex3";
   }
   .tex0 {
     margin: 10px 5px 5px 5px;
@@ -529,27 +507,14 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: 85px 470px 150px 320px 180px 370px 155px;
         grid-template-rows: 85px 470px 150px 320px 180px 370px 155px;
-        grid-template-areas: "tex0"
- "first"
- "tex1"
- "second"
- "tex2"
- "thirt"
- "tex3";
+        grid-template-areas: "tex0" "first" "tex1" "second" "tex2" "thirt" "tex3";
   }
   .contenedor2 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 50px 100px 400px 150px 330px 200px 400px 595px;
         grid-template-rows: 50px 100px 400px 150px 330px 200px 400px 595px;
-        grid-template-areas: "primero"
- "postura1"
- "tpostura1"
- "postura2"
- "tpostura2"
- "postura3"
- "tpostura3"
- "reflexion";
+        grid-template-areas: "primero" "postura1" "tpostura1" "postura2" "tpostura2" "postura3" "tpostura3" "reflexion";
   }
   .tpostura1 {
     margin: 100px 50px 50px 50px;
@@ -570,7 +535,7 @@
     -ms-grid-rows: 620px 450px 525px 120px;
         grid-template-rows: 620px 450px 525px 120px;
   }
-  .hijo1 {
+  .hijo1, .hijo2 {
     margin: 70px 20px 20px 20px;
   }
   .hijo2 {
@@ -606,14 +571,8 @@ h3 {
       grid-template-rows: 842px 900px;
 }
 
-.hijo1 {
+.hijo1, .hijo2 {
   margin: 100px 100px 0px 60px;
-  line-height: 25px;
-  color: #ffcce2;
-}
-
-.hijo2 {
-  margin: 40px 40px 0px 50px;
   line-height: 25px;
   color: #ffcce2;
 }
@@ -630,7 +589,7 @@ p {
     -ms-grid-rows: 0fr 300px 320px 650px;
         grid-template-rows: 0fr 300px 320px 650px;
   }
-  .hijo1 {
+  .hijo1, .hijo2 {
     margin: 40px 40px 40px 40px;
   }
   .hijo2 {
@@ -644,13 +603,7 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: 155px 270px 210px 250px 250px 270px 205px;
         grid-template-rows: 155px 270px 210px 250px 250px 270px 205px;
-        grid-template-areas: "tex0"
- "first"
- "tex1"
- "second"
- "tex2"
- "thirt"
- "tex3";
+        grid-template-areas: "tex0" "first" "tex1" "second" "tex2" "thirt" "tex3";
   }
 }
 
@@ -708,12 +661,13 @@ p {
 .meditacion:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+  opacity: .6;
 }
 
 .yoga {
   background-image: url(/fotos/yogaa.jpg);
   background-size: 100%;
-  border-top-left-radius: 70px;
+  border-start-end-radius: 70px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -721,6 +675,7 @@ p {
 .yoga:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+  opacity: .6;
 }
 
 .masajes {
@@ -734,12 +689,13 @@ p {
 .masajes:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+  opacity: .6;
 }
 
 .reiki {
   background-image: url(/fotos/reiki.jpg);
   background-size: 100%;
-  border-top-left-radius: 70px;
+  border-start-end-radius: 70px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -747,6 +703,7 @@ p {
 .reiki:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+  opacity: .6;
 }
 
 .caja:hover {

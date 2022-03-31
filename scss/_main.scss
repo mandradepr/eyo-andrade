@@ -411,10 +411,9 @@ h3{
     line-height: 25px;
     color:rgb(255,204,226);
 }
+//extend//
 .hijo2{
-    margin: 40px 40px 0px 50px;
-    line-height: 25px;
-    color:rgb(255,204,226);
+    @extend .hijo1;
 }
 p{
     color:azure ;
@@ -462,6 +461,17 @@ p{
     flex-wrap: wrap;
 
 }
+//mixin//
+@mixin transformacion1 {
+    background-size:100%;
+    border-start-end-radius: 70px;
+    transition:all 1s ease;
+    &:hover{
+        transform:scale(1.1, 1.1);
+        opacity:.6;
+    }
+}
+
 .caja{
     width: 18rem;
     height: 60vh;
@@ -474,39 +484,19 @@ p{
 }
 .meditacion{
     background-image: url(/fotos/meditacion.jpg);
-    background-size:100%;
-    border-start-end-radius: 70px;
-    transition:all 1s ease;
-}
-.meditacion:hover{
-    transform:scale(1.1, 1.1);
+    @include transformacion1;
 }
 .yoga{
     background-image: url(/fotos/yogaa.jpg);
-    background-size: 100%;
-    border-top-left-radius: 70px;
-    transition:all 1s ease;
-}
-.yoga:hover{
-    transform: scale(1.1, 1.1);
+    @include transformacion1;
 }
 .masajes{
     background-image: url(/fotos/masaje.jpg);
-    background-size:100%;
-    border-start-end-radius: 70px;
-    transition:all 1s ease;
-}
-.masajes:hover{
-    transform: scale(1.1, 1.1);
+    @include transformacion1;
 }
 .reiki{ 
     background-image: url(/fotos/reiki.jpg);
-    background-size:100%;
-    border-top-left-radius: 70px;
-    transition:all 1s ease;
-}
-.reiki:hover{
-    transform: scale(1.1, 1.1);
+    @include transformacion1;
 }
 .caja:hover{
     opacity: 1;
