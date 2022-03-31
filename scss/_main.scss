@@ -6,9 +6,16 @@
     z-index: 1;
     margin-top: 100px;    
 }
+//map- para fondos//
+$fondocolors: (
+    fondo1:rgb(106, 165, 170) linear-gradient(0deg, rgb(109, 141, 145) 5%, rgba(255,204,232,1) 82%),
+    
+    fondo2:rgb(255,204,226),
+
+    fondo3:rgb(106, 165, 170) linear-gradient(0deg, rgba(255,204,232,1) , rgb(109, 141, 145) 5% 82%),
+);
 .for{
-    background: rgb(106, 165, 170);
-    background: linear-gradient(0deg, rgba(255,204,232,1) , rgb(109, 141, 145) 5% 82%);
+    background:map-get($fondocolors,fondo3);
     text-align: center;
     color: $bgcolor;
     font-family: 'Merienda', cursive;
@@ -34,8 +41,7 @@
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    background: rgb(106, 165, 170);
-    background: linear-gradient(0deg, rgb(109, 141, 145) 5%, rgba(255,204,232,1) 82%);
+    background: map-get($fondocolors,fondo1);
     grid-template-rows: 0fr 1fr 0fr;
     grid-template-areas: 
     "tex0 tex0 tex0" 
@@ -80,8 +86,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 90px;
-    background: rgb(106, 165, 170);
-    background: linear-gradient(0deg, rgb(109, 141, 145) 5%, rgba(255,204,232,1) 82%);
+    background: map-get($fondocolors,fondo1);
     justify-items: center;
 }
 .contenedor{
@@ -97,7 +102,7 @@
     grid-template-rows: 450px;
 }
 .hijo{
-    background: rgb(255,204,226);
+    background: map-get($fondocolors,fondo2);
     width: 100%;
     margin: 16px auto;
     height: 90.5%;
@@ -133,8 +138,7 @@
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
-    background: rgb(106, 165, 170);
-    background: linear-gradient(0deg, rgb(109, 141, 145) 5%, rgba(255,204,232,1) 82%);
+    background:map-get($fondocolors,fondo1);
     grid-template-rows: 1fr 0,5fr 1fr 1fr;
     grid-template-areas: 
     "primero primero primero"
@@ -237,15 +241,13 @@
     .contenedor1{
         height: 450vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 0fr 1fr 1fr 950px;
-        
+        grid-template-rows: 0fr 1fr 1fr 950px;    
     }
     .hijo1{
         margin: 40px 40px 40px 40px;
     }
     .hijo2{
         margin: 40px 40px 40px 40px;
-
     }
     .contenedor{
         grid-template-columns: 1fr;
