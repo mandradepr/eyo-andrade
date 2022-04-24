@@ -33,7 +33,18 @@ $fondocolors: (
         opacity:.6;
     }
 }
-
+.hijo1{
+    margin: 100px 100px 0px 60px;
+    line-height: 25px;
+    color:rgb(255,204,226);
+}
+//extend//
+.hijo2{
+    @extend .hijo1;
+}
+p{
+    color:azure ;
+} 
 .service{
     width: 100%;
     margin:auto;
@@ -130,7 +141,15 @@ $fondocolors: (
     background-color: rgb(255, 255, 255);
     
 }
-
+.contenedor1{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(122, 148, 140);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 842px 900px;
+}
 .contenedor2{
     width: 100%;
     margin:auto;
@@ -350,6 +369,18 @@ $fondocolors: (
         "thirt"
         "tex3";
     }
+    .contenedor1{
+        height: 350vh;
+        font-size: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 400px 570px 550px;    
+    }
+    .hijo1{
+        margin: 10px 10px 10px 10px;
+    }
+    .hijo2{
+        margin: 10px 10px 10px 10px;
+    }
     .contenedor2{
         grid-template-columns: 1fr;
         grid-template-rows: 50px 100px 400px 150px 330px 200px 400px 595px;
@@ -375,17 +406,6 @@ $fondocolors: (
     .reflexion{
         margin: 50px 50px 50px 50px;
     }
-    .contenedor1{
-        height: 350vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 620px 450px 525px 120px;
-    }
-    .hijo1{
-        margin: 70px 20px 20px 20px;
-    }
-    .hijo2{
-        margin: 20px 20px 20px 20px;
-    }
 }
 h2{
     text-align: center;
@@ -399,27 +419,8 @@ h3{
 .tipos{
     color:rgb(47, 58, 55);
 }
-.contenedor1{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: rgb(122, 148, 140);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 842px 900px;
-}
-.hijo1{
-    margin: 100px 100px 0px 60px;
-    line-height: 25px;
-    color:rgb(255,204,226);
-}
-//extend//
-.hijo2{
-    @extend .hijo1;
-}
-p{
-    color:azure ;
-} 
+
+
 @media screen and (max-width:320px){
     .contenedor1{
         height: 400vh;

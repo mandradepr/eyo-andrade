@@ -112,6 +112,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.hijo1, .hijo2 {
+  margin: 100px 100px 0px 60px;
+  line-height: 25px;
+  color: #ffcce2;
+}
+
+p {
+  color: azure;
+}
+
 .service {
   width: 100%;
   margin: auto;
@@ -264,6 +274,19 @@
 
 .clases {
   background-color: white;
+}
+
+.contenedor1 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #7a948c;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 842px 900px;
+      grid-template-rows: 842px 900px;
 }
 
 .contenedor2 {
@@ -505,6 +528,20 @@
         grid-template-rows: 85px 470px 150px 320px 180px 370px 155px;
         grid-template-areas: "tex0" "first" "tex1" "second" "tex2" "thirt" "tex3";
   }
+  .contenedor1 {
+    height: 350vh;
+    font-size: 15px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 500px 400px 570px 550px;
+        grid-template-rows: 500px 400px 570px 550px;
+  }
+  .hijo1, .hijo2 {
+    margin: 10px 10px 10px 10px;
+  }
+  .hijo2 {
+    margin: 10px 10px 10px 10px;
+  }
   .contenedor2 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -524,19 +561,6 @@
   .reflexion {
     margin: 50px 50px 50px 50px;
   }
-  .contenedor1 {
-    height: 350vh;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 620px 450px 525px 120px;
-        grid-template-rows: 620px 450px 525px 120px;
-  }
-  .hijo1, .hijo2 {
-    margin: 70px 20px 20px 20px;
-  }
-  .hijo2 {
-    margin: 20px 20px 20px 20px;
-  }
 }
 
 h2 {
@@ -552,29 +576,6 @@ h3 {
 
 .tipos {
   color: #2f3a37;
-}
-
-.contenedor1 {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: #7a948c;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 842px 900px;
-      grid-template-rows: 842px 900px;
-}
-
-.hijo1, .hijo2 {
-  margin: 100px 100px 0px 60px;
-  line-height: 25px;
-  color: #ffcce2;
-}
-
-p {
-  color: azure;
 }
 
 @media screen and (max-width: 320px) {
